@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <title>Portfólio - Bianca Dantas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background:#fff; font-family:'Helvetica Neue',Arial,sans-serif; }
+    h1,h2,h3 { font-family:'Georgia',serif; color:#d63384; }
+    .navbar { background:#fff; border-bottom:1px solid #eee; }
+    .navbar-brand { color:#d63384 !important; }
+    .hero { padding:100px 20px; text-align:center; background:#f8f9fa; }
+    .project-img { height:200px; object-fit:cover; }
+    .sobre img { max-width:250px; border-radius:8px; margin-bottom:20px; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+    .badge-custom { background-color:#d63384; color:#fff; }
+    .btn-custom { background-color:#d63384; color:#fff; }
+    .btn-custom:hover { background-color:#b42a6f; }
+
+    /* Destaque na aba ativa */
+    .nav-tabs .nav-link.active {
+      border-color: #d63384 #d63384 #fff;
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    /* Animação suave nas abas */
+    .tab-pane {
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .tab-pane.fade {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .tab-pane.fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bianca Dantas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4">Bianca Dantas</h1>
+      <p class="lead">Filmmaker • Diretora • Montadora e Editora de Vídeo</p>
+    </div>
+  </section>
+
+  <div class="container mt-4">
+    <ul class="nav nav-tabs" id="portfolioTabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" id="projetos-tab" data-bs-toggle="tab" data-bs-target="#projetos" type="button" role="tab" aria-controls="projetos" aria-selected="true">Projetos</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="false">Sobre mim</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="habilidades-tab" data-bs-toggle="tab" data-bs-target="#habilidades" type="button" role="tab" aria-controls="habilidades" aria-selected="false">Habilidades</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="contato-tab" data-bs-toggle="tab" data-bs-target="#contato" type="button" role="tab" aria-controls="contato" aria-selected="false">Contato</button>
+      </li>
+    </ul>
+
+    <div class="tab-content py-4" id="portfolioTabsContent">
+      <div class="tab-pane fade show active" id="projetos" role="tabpanel" aria-labelledby="projetos-tab">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img src="DELLA VITA.png" class="project-img card-img-top" alt="Della Vitta Sounds">
+              <div class="card-body">
+                <h5 class="card-title">Della Vitta Sounds</h5>
+                <span class="badge badge-custom">Em desenvolvimento</span>
+                <p class="card-text">Gravações de sets musicais para DJs em cafeterias.</p>
+                <a href="https://youtu.be/wRN6TwnQLuc" target="_blank" class="btn btn-custom">Ver projeto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img src="1000mg.png" class="project-img card-img-top" alt="1000mg">
+              <div class="card-body">
+                <h5 class="card-title">1000mg</h5>
+                <span class="badge badge-custom">Curta-metragem</span>
+                <p class="card-text">Direção e montagem. Projeto acadêmico focado em filmes-minuto.</p>
+                <a href="https://vimeo.com/1183346935" target="_blank" class="btn btn-custom">Ver projeto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img src="CULPA.png" class="project-img card-img-top" alt="CULPA">
+              <div class="card-body">
+                <h5 class="card-title">CULPA</h5>
+                <span class="badge badge-custom">Experimental</span>
+                <p class="card-text">Produção e edição de som. Curta acadêmico experimental.</p>
+                <a href="https://vimeo.com/1177658511" target="_blank" class="btn btn-custom">Ver projeto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+        <div class="text-center sobre">
+          <h2>Sobre mim</h2>
+          <img src="Bianca.jpg" alt="Foto de Bianca Dantas">
+          <p>Sou estudante de audiovisual e cinema com foco em direção, roteiro e montagem. Desenvolvo narrativas que exploram as dinâmicas do ser humano. Busco alinhar a força do cinema autoral com a produção de filmes para eventos como festas ou casamentos.</p>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="habilidades" role="tabpanel" aria-labelledby="habilidades-tab">
+        <h2>Habilidades</h2>
+        <span class="badge badge-custom me-2">Adobe Premiere</span>
+        <span class="badge badge-custom me-2">CapCut</span>
+        <span class="badge badge-custom me-2">Roteiro</span>
+        <span class="badge badge-custom me-2">Direção</span>
+        <span class="badge badge-custom me-2">Montagem</span>
+      </div>
+
+      <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contato-tab">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:biahgualha@gmail.com">biahgualha@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/biagualha" target="_blank">@biagualha</a></p>
+        <a href="mailto:biahgualha@gmail.com" class="btn btn-custom">Enviar mensagem</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<title>Título da Página</title>
+	
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	
+</body>
+</html>
